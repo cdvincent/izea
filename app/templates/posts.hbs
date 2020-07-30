@@ -1,0 +1,9 @@
+<h2>Posts</h2>
+
+<div class="posts">
+    <ul class="results">
+        {{#each @model as |post|}}
+            <li class="entry"><Entry @post={{post}}/> <Modal @post={{post}}/></li>
+        {{/each}}
+    </ul>
+</div>  

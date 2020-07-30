@@ -1,0 +1,3 @@
+[submodule "izea-interview/app"] 
+  path = izea-interview/app 
+  url = https://github.com/cdvincent/izea-interview.git

@@ -1,0 +1,37 @@
+    <div>
+        <button class="button" {{on "click" this.launchModal}}>Learn More</button>
+
+        {{#if this.launch}}
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn" {{on "click" this.launchModal}}>&times;</span>
+                    <h2>Title: {{@post.title}}</h2>
+                    <hr>
+                    <p>Body: {{@post.body}}</p>
+                    <p>Author: {{@post.userId.name}}</p>
+                    <button type="button" class="button {{if this.show "show"}}" {{on "click" this.toggle}}>
+    
+                        {{#if this.show}}
+                            <small>Hide</small>
+                        {{else}}
+                            <small>About the author</small>
+                        {{/if}}
+                    </button>
+                    <div class="{{if this.show "show"}}">
+                        {{#if this.show}}
+                            <p>Username: {{@post.userId.username}}</p>
+                            <p>Email: {{@post.userId.email}}</p>
+                            <p>Address: {{@post.userId.address.suite}} {{@post.userId.address.street}}, {{@post.userId.address.city}} {{@post.userId.address.zipcode}}</p>
+                            <p>Phone: {{@post.userId.phone}}</p>
+                            <p>Website: {{@post.userId.website}}</p>
+                            <p>Company: {{@post.userId.company.name}}</p>
+                        {{else}}
+                            <p></p>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        {{else}}
+            <p></p>
+        {{/if}}
+    </div>
