@@ -2,8 +2,8 @@
         <button class="button" {{on "click" this.launchModal}}>Learn More</button>
 
         {{#if this.launch}}
-            <div class="modal">
-                <div class="modal-content">
+            <div class="modal" {{on "click" this.launchModal}}>
+                <div class="modal-content" {{on "click" this.contentWasClicked}}>
                     <span class="closeBtn" {{on "click" this.launchModal}}>&times;</span>
                     <h2>Title: {{@post.title}}</h2>
                     <hr>

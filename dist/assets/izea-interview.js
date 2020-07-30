@@ -120,7 +120,7 @@
   });
   _exports.default = void 0;
 
-  var _dec, _dec2, _dec3, _dec4, _class, _descriptor, _descriptor2, _temp;
+  var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _class, _descriptor, _descriptor2, _descriptor3, _temp;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -136,8 +136,8 @@
           <button class="button" {{on "click" this.launchModal}}>Learn More</button>
   
           {{#if this.launch}}
-              <div class="modal">
-                  <div class="modal-content">
+              <div class="modal" {{on "click" this.launchModal}}>
+                  <div class="modal-content" {{on "click" this.contentWasClicked}}>
                       <span class="closeBtn" {{on "click" this.launchModal}}>&times;</span>
                       <h2>Title: {{@post.title}}</h2>
                       <hr>
@@ -170,19 +170,31 @@
           {{/if}}
       </div>
   */
-  {"id":"IUKsdTIr","block":"{\"symbols\":[\"@post\"],\"statements\":[[2,\"    \"],[10,\"div\"],[12],[2,\"\\n        \"],[11,\"button\"],[24,0,\"button\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"Learn More\"],[13],[2,\"\\n\\n\"],[6,[37,1],[[32,0,[\"launch\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"            \"],[10,\"div\"],[14,0,\"modal\"],[12],[2,\"\\n                \"],[10,\"div\"],[14,0,\"modal-content\"],[12],[2,\"\\n                    \"],[11,\"span\"],[24,0,\"closeBtn\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"×\"],[13],[2,\"\\n                    \"],[10,\"h2\"],[12],[2,\"Title: \"],[1,[32,1,[\"title\"]]],[13],[2,\"\\n                    \"],[10,\"hr\"],[12],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Body: \"],[1,[32,1,[\"body\"]]],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Author: \"],[1,[32,1,[\"userId\",\"name\"]]],[13],[2,\"\\n                    \"],[11,\"button\"],[16,0,[31,[\"button \",[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[24,4,\"button\"],[4,[38,0],[\"click\",[32,0,[\"toggle\"]]],null],[12],[2,\"\\n    \\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"Hide\"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"About the author\"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                    \"],[10,\"div\"],[15,0,[31,[[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[12],[2,\"\\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[2,\"Username: \"],[1,[32,1,[\"userId\",\"username\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Email: \"],[1,[32,1,[\"userId\",\"email\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Address: \"],[1,[32,1,[\"userId\",\"address\",\"suite\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"street\"]]],[2,\", \"],[1,[32,1,[\"userId\",\"address\",\"city\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"zipcode\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Phone: \"],[1,[32,1,[\"userId\",\"phone\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Website: \"],[1,[32,1,[\"userId\",\"website\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Company: \"],[1,[32,1,[\"userId\",\"company\",\"name\"]]],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                \"],[13],[2,\"\\n            \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"],[13]],\"hasEval\":false,\"upvars\":[\"on\",\"if\"]}","meta":{"moduleName":"izea-interview/components/modal.hbs"}});
+  {"id":"IgYcGyF/","block":"{\"symbols\":[\"@post\"],\"statements\":[[2,\"    \"],[10,\"div\"],[12],[2,\"\\n        \"],[11,\"button\"],[24,0,\"button\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"Learn More\"],[13],[2,\"\\n\\n\"],[6,[37,1],[[32,0,[\"launch\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"            \"],[11,\"div\"],[24,0,\"modal\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"\\n                \"],[11,\"div\"],[24,0,\"modal-content\"],[4,[38,0],[\"click\",[32,0,[\"contentWasClicked\"]]],null],[12],[2,\"\\n                    \"],[11,\"span\"],[24,0,\"closeBtn\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"×\"],[13],[2,\"\\n                    \"],[10,\"h2\"],[12],[2,\"Title: \"],[1,[32,1,[\"title\"]]],[13],[2,\"\\n                    \"],[10,\"hr\"],[12],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Body: \"],[1,[32,1,[\"body\"]]],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Author: \"],[1,[32,1,[\"userId\",\"name\"]]],[13],[2,\"\\n                    \"],[11,\"button\"],[16,0,[31,[\"button \",[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[24,4,\"button\"],[4,[38,0],[\"click\",[32,0,[\"toggle\"]]],null],[12],[2,\"\\n    \\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"Hide\"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"About the author\"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                    \"],[10,\"div\"],[15,0,[31,[[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[12],[2,\"\\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[2,\"Username: \"],[1,[32,1,[\"userId\",\"username\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Email: \"],[1,[32,1,[\"userId\",\"email\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Address: \"],[1,[32,1,[\"userId\",\"address\",\"suite\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"street\"]]],[2,\", \"],[1,[32,1,[\"userId\",\"address\",\"city\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"zipcode\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Phone: \"],[1,[32,1,[\"userId\",\"phone\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Website: \"],[1,[32,1,[\"userId\",\"website\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Company: \"],[1,[32,1,[\"userId\",\"company\",\"name\"]]],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                \"],[13],[2,\"\\n            \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"],[13]],\"hasEval\":false,\"upvars\":[\"on\",\"if\"]}","meta":{"moduleName":"izea-interview/components/modal.hbs"}});
 
-  let RentalImageComponent = (_dec = Ember._tracked, _dec2 = Ember._tracked, _dec3 = Ember._action, _dec4 = Ember._action, (_class = (_temp = class RentalImageComponent extends _component.default {
+  let RentalImageComponent = (_dec = Ember._tracked, _dec2 = Ember._tracked, _dec3 = Ember._tracked, _dec4 = Ember._action, _dec5 = Ember._action, _dec6 = Ember._action, (_class = (_temp = class RentalImageComponent extends _component.default {
     constructor(...args) {
       super(...args);
 
       _initializerDefineProperty(this, "launch", _descriptor, this);
 
       _initializerDefineProperty(this, "show", _descriptor2, this);
+
+      _initializerDefineProperty(this, "contentClicked", _descriptor3, this);
     }
 
     launchModal() {
-      this.launch = !this.launch;
+      if (this.contentClicked) {
+        this.launch = true;
+        this.contentClicked = false;
+      } else {
+        this.contentClicked = false;
+        this.launch = !this.launch;
+      }
+    }
+
+    contentWasClicked() {
+      this.contentClicked = true;
     }
 
     toggle() {
@@ -203,7 +215,14 @@
     initializer: function () {
       return false;
     }
-  }), _applyDecoratedDescriptor(_class.prototype, "launchModal", [_dec3], Object.getOwnPropertyDescriptor(_class.prototype, "launchModal"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "toggle", [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, "toggle"), _class.prototype)), _class));
+  }), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, "contentClicked", [_dec3], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: function () {
+      return false;
+    }
+  }), _applyDecoratedDescriptor(_class.prototype, "launchModal", [_dec4], Object.getOwnPropertyDescriptor(_class.prototype, "launchModal"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "contentWasClicked", [_dec5], Object.getOwnPropertyDescriptor(_class.prototype, "contentWasClicked"), _class.prototype), _applyDecoratedDescriptor(_class.prototype, "toggle", [_dec6], Object.getOwnPropertyDescriptor(_class.prototype, "toggle"), _class.prototype)), _class));
   _exports.default = RentalImageComponent;
 
   Ember._setComponentTemplate(__COLOCATED_TEMPLATE__, RentalImageComponent);
