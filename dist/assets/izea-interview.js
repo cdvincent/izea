@@ -24,7 +24,7 @@
   _exports.default = void 0;
 
   var _default = _emberData.default.RESTAdapter.extend({
-    host: 'http://jsonplaceholder.typicode.com',
+    host: 'https://jsonplaceholder.typicode.com',
 
     pathForType() {
       return 'posts';
@@ -43,7 +43,7 @@
   _exports.default = void 0;
 
   var _default = _emberData.default.RESTAdapter.extend({
-    host: 'http://jsonplaceholder.typicode.com',
+    host: 'https://jsonplaceholder.typicode.com',
 
     pathForType() {
       return 'users';
