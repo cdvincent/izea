@@ -132,3 +132,54 @@ li {
   text-decoration: none;
   cursor: pointer;
 }
+
+.homeDiv {
+  height: 50vh;
+  text-align: center;
+  margin-top: 35%;
+}
+
+.homeBtn {
+  background-color: aqua;
+  padding: 40px;
+  color: teal;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: #391343;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 920px) {
+  .header {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .homeBtn {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 793px) {
+  .button {
+    width: 30%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .button {
+    width: 50%;
+    font-size: 8px;
+  }
+}

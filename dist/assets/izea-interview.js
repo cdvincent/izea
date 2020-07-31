@@ -666,8 +666,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "uiPFZtOR",
-    "block": "{\"symbols\":[],\"statements\":[[10,\"h2\"],[14,0,\"header\"],[12],[2,\"Chris Vincent's Interview App\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"container\"],[12],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"posts\"]],[[\"default\"],[{\"statements\":[[2,\"Click to view posts!\"]],\"parameters\":[]}]]],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[]}",
+    "id": "IGoXIaKX",
+    "block": "{\"symbols\":[],\"statements\":[[10,\"h2\"],[14,0,\"header\"],[12],[2,\"Chris Vincent's Interview App\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"container\"],[12],[2,\"\\n    \"],[10,\"div\"],[14,0,\"homeDiv\"],[12],[2,\"\\n        \"],[8,\"link-to\",[[24,0,\"homeBtn\"]],[[\"@route\"],[\"posts\"]],[[\"default\"],[{\"statements\":[[2,\"Click to view posts!\"]],\"parameters\":[]}]]],[2,\"\\n    \"],[13],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[]}",
     "meta": {
       "moduleName": "izea-interview/templates/index.hbs"
     }
