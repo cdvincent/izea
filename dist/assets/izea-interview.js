@@ -768,7 +768,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("izea-interview/app")["default"].create({"name":"izea-interview","version":"0.0.0+d6390d6f"});
+            require("izea-interview/app")["default"].create({"name":"izea-interview","version":"0.0.0+2489db23"});
           }
         
 //# sourceMappingURL=izea-interview.map
