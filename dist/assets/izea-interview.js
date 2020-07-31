@@ -143,7 +143,7 @@
                       <hr>
                       <p>Body: {{@post.body}}</p>
                       <p>Author: {{@post.userId.name}}</p>
-                      <button type="button" class="button {{if this.show "show"}}" {{on "click" this.toggle}}>
+                      <button type="button" class="button authBtn {{if this.show "show"}}" {{on "click" this.toggle}}>
       
                           {{#if this.show}}
                               <small>Hide</small>
@@ -170,7 +170,7 @@
           {{/if}}
       </div>
   */
-  {"id":"IgYcGyF/","block":"{\"symbols\":[\"@post\"],\"statements\":[[2,\"    \"],[10,\"div\"],[12],[2,\"\\n        \"],[11,\"button\"],[24,0,\"button\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"Learn More\"],[13],[2,\"\\n\\n\"],[6,[37,1],[[32,0,[\"launch\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"            \"],[11,\"div\"],[24,0,\"modal\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"\\n                \"],[11,\"div\"],[24,0,\"modal-content\"],[4,[38,0],[\"click\",[32,0,[\"contentWasClicked\"]]],null],[12],[2,\"\\n                    \"],[11,\"span\"],[24,0,\"closeBtn\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"×\"],[13],[2,\"\\n                    \"],[10,\"h2\"],[12],[2,\"Title: \"],[1,[32,1,[\"title\"]]],[13],[2,\"\\n                    \"],[10,\"hr\"],[12],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Body: \"],[1,[32,1,[\"body\"]]],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Author: \"],[1,[32,1,[\"userId\",\"name\"]]],[13],[2,\"\\n                    \"],[11,\"button\"],[16,0,[31,[\"button \",[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[24,4,\"button\"],[4,[38,0],[\"click\",[32,0,[\"toggle\"]]],null],[12],[2,\"\\n    \\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"Hide\"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"About the author\"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                    \"],[10,\"div\"],[15,0,[31,[[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[12],[2,\"\\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[2,\"Username: \"],[1,[32,1,[\"userId\",\"username\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Email: \"],[1,[32,1,[\"userId\",\"email\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Address: \"],[1,[32,1,[\"userId\",\"address\",\"suite\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"street\"]]],[2,\", \"],[1,[32,1,[\"userId\",\"address\",\"city\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"zipcode\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Phone: \"],[1,[32,1,[\"userId\",\"phone\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Website: \"],[1,[32,1,[\"userId\",\"website\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Company: \"],[1,[32,1,[\"userId\",\"company\",\"name\"]]],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                \"],[13],[2,\"\\n            \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"],[13]],\"hasEval\":false,\"upvars\":[\"on\",\"if\"]}","meta":{"moduleName":"izea-interview/components/modal.hbs"}});
+  {"id":"OOneYH8D","block":"{\"symbols\":[\"@post\"],\"statements\":[[2,\"    \"],[10,\"div\"],[12],[2,\"\\n        \"],[11,\"button\"],[24,0,\"button\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"Learn More\"],[13],[2,\"\\n\\n\"],[6,[37,1],[[32,0,[\"launch\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"            \"],[11,\"div\"],[24,0,\"modal\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"\\n                \"],[11,\"div\"],[24,0,\"modal-content\"],[4,[38,0],[\"click\",[32,0,[\"contentWasClicked\"]]],null],[12],[2,\"\\n                    \"],[11,\"span\"],[24,0,\"closeBtn\"],[4,[38,0],[\"click\",[32,0,[\"launchModal\"]]],null],[12],[2,\"×\"],[13],[2,\"\\n                    \"],[10,\"h2\"],[12],[2,\"Title: \"],[1,[32,1,[\"title\"]]],[13],[2,\"\\n                    \"],[10,\"hr\"],[12],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Body: \"],[1,[32,1,[\"body\"]]],[13],[2,\"\\n                    \"],[10,\"p\"],[12],[2,\"Author: \"],[1,[32,1,[\"userId\",\"name\"]]],[13],[2,\"\\n                    \"],[11,\"button\"],[16,0,[31,[\"button authBtn \",[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[24,4,\"button\"],[4,[38,0],[\"click\",[32,0,[\"toggle\"]]],null],[12],[2,\"\\n    \\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"Hide\"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"small\"],[12],[2,\"About the author\"],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                    \"],[10,\"div\"],[15,0,[31,[[30,[36,1],[[32,0,[\"show\"]],\"show\"],null]]]],[12],[2,\"\\n\"],[6,[37,1],[[32,0,[\"show\"]]],null,[[\"default\",\"else\"],[{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[2,\"Username: \"],[1,[32,1,[\"userId\",\"username\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Email: \"],[1,[32,1,[\"userId\",\"email\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Address: \"],[1,[32,1,[\"userId\",\"address\",\"suite\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"street\"]]],[2,\", \"],[1,[32,1,[\"userId\",\"address\",\"city\"]]],[2,\" \"],[1,[32,1,[\"userId\",\"address\",\"zipcode\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Phone: \"],[1,[32,1,[\"userId\",\"phone\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Website: \"],[1,[32,1,[\"userId\",\"website\"]]],[13],[2,\"\\n                            \"],[10,\"p\"],[12],[2,\"Company: \"],[1,[32,1,[\"userId\",\"company\",\"name\"]]],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"                            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"                    \"],[13],[2,\"\\n                \"],[13],[2,\"\\n            \"],[13],[2,\"\\n\"]],\"parameters\":[]},{\"statements\":[[2,\"            \"],[10,\"p\"],[12],[13],[2,\"\\n\"]],\"parameters\":[]}]]],[2,\"    \"],[13]],\"hasEval\":false,\"upvars\":[\"on\",\"if\"]}","meta":{"moduleName":"izea-interview/components/modal.hbs"}});
 
   let RentalImageComponent = (_dec = Ember._tracked, _dec2 = Ember._tracked, _dec3 = Ember._tracked, _dec4 = Ember._action, _dec5 = Ember._action, _dec6 = Ember._action, (_class = (_temp = class RentalImageComponent extends _component.default {
     constructor(...args) {
@@ -657,24 +657,6 @@
     }
   });
 });
-;define("izea-interview/templates/application", ["exports"], function (_exports) {
-  "use strict";
-
-  Object.defineProperty(_exports, "__esModule", {
-    value: true
-  });
-  _exports.default = void 0;
-
-  var _default = Ember.HTMLBars.template({
-    "id": "XjHelXxe",
-    "block": "{\"symbols\":[],\"statements\":[[10,\"div\"],[14,0,\"container\"],[12],[2,\"\\n    \"],[1,[30,[36,1],[[30,[36,0],null,null]],null]],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[\"-outlet\",\"component\"]}",
-    "meta": {
-      "moduleName": "izea-interview/templates/application.hbs"
-    }
-  });
-
-  _exports.default = _default;
-});
 ;define("izea-interview/templates/index", ["exports"], function (_exports) {
   "use strict";
 
@@ -684,8 +666,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "yU2EH2MA",
-    "block": "{\"symbols\":[],\"statements\":[[10,\"h2\"],[12],[2,\"Hello\"],[13],[2,\"\\n\\n\"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"posts\"]],[[\"default\"],[{\"statements\":[[2,\"Click to view posts!\"]],\"parameters\":[]}]]]],\"hasEval\":false,\"upvars\":[]}",
+    "id": "uiPFZtOR",
+    "block": "{\"symbols\":[],\"statements\":[[10,\"h2\"],[14,0,\"header\"],[12],[2,\"Chris Vincent's Interview App\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"container\"],[12],[2,\"\\n    \"],[8,\"link-to\",[[24,0,\"button\"]],[[\"@route\"],[\"posts\"]],[[\"default\"],[{\"statements\":[[2,\"Click to view posts!\"]],\"parameters\":[]}]]],[2,\"\\n\"],[13]],\"hasEval\":false,\"upvars\":[]}",
     "meta": {
       "moduleName": "izea-interview/templates/index.hbs"
     }
@@ -702,8 +684,8 @@
   _exports.default = void 0;
 
   var _default = Ember.HTMLBars.template({
-    "id": "eMD367X1",
-    "block": "{\"symbols\":[\"post\",\"@model\"],\"statements\":[[10,\"h2\"],[12],[2,\"Posts\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"posts\"],[12],[2,\"\\n    \"],[10,\"ul\"],[14,0,\"results\"],[12],[2,\"\\n\"],[6,[37,1],[[30,[36,0],[[30,[36,0],[[32,2]],null]],null]],null,[[\"default\"],[{\"statements\":[[2,\"            \"],[10,\"li\"],[14,0,\"entry\"],[12],[8,\"entry\",[],[[\"@post\"],[[32,1]]],null],[2,\" \"],[8,\"modal\",[],[[\"@post\"],[[32,1]]],null],[13],[2,\"\\n\"]],\"parameters\":[1]}]]],[2,\"    \"],[13],[2,\"\\n\"],[13],[2,\"  \"]],\"hasEval\":false,\"upvars\":[\"-track-array\",\"each\"]}",
+    "id": "RwrjMEUk",
+    "block": "{\"symbols\":[\"post\",\"@model\"],\"statements\":[[10,\"h2\"],[14,0,\"header\"],[12],[2,\"Posts\"],[13],[2,\"\\n\\n\"],[10,\"div\"],[14,0,\"container\"],[12],[2,\"\\n    \"],[10,\"div\"],[14,0,\"posts\"],[12],[2,\"\\n        \"],[10,\"ul\"],[14,0,\"results\"],[12],[2,\"\\n\"],[6,[37,1],[[30,[36,0],[[30,[36,0],[[32,2]],null]],null]],null,[[\"default\"],[{\"statements\":[[2,\"                \"],[10,\"li\"],[14,0,\"entry\"],[12],[8,\"entry\",[],[[\"@post\"],[[32,1]]],null],[2,\" \"],[8,\"modal\",[],[[\"@post\"],[[32,1]]],null],[13],[2,\"\\n\"]],\"parameters\":[1]}]]],[2,\"        \"],[13],[2,\"\\n    \"],[13],[2,\"  \\n\"],[13]],\"hasEval\":false,\"upvars\":[\"-track-array\",\"each\"]}",
     "meta": {
       "moduleName": "izea-interview/templates/posts.hbs"
     }
@@ -786,7 +768,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("izea-interview/app")["default"].create({"name":"izea-interview","version":"0.0.0+32861dc0"});
+            require("izea-interview/app")["default"].create({"name":"izea-interview","version":"0.0.0+d6390d6f"});
           }
         
 //# sourceMappingURL=izea-interview.map

@@ -1,30 +1,55 @@
 'use strict';
 
+define("izea-interview/tests/acceptance/posts-test", ["qunit", "@ember/test-helpers", "ember-qunit"], function (_qunit, _testHelpers, _emberQunit) {
+  "use strict";
+
+  (0, _qunit.module)('Acceptance | posts', function (hooks) {
+    (0, _emberQunit.setupApplicationTest)(hooks);
+    (0, _qunit.test)('visiting /', async function (assert) {
+      await (0, _testHelpers.visit)('/');
+      assert.equal((0, _testHelpers.currentURL)(), '/');
+      assert.dom('h2').hasText('Hello');
+      assert.dom('.button').hasText('Click to view posts!');
+      await (0, _testHelpers.click)('.button');
+      assert.equal((0, _testHelpers.currentURL)(), '/posts');
+    });
+  });
+});
 define("izea-interview/tests/integration/components/entry-test", ["qunit", "ember-qunit", "@ember/test-helpers"], function (_qunit, _emberQunit, _testHelpers) {
   "use strict";
 
   (0, _qunit.module)('Integration | Component | entry', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders', async function (assert) {
-      // Set any properties with this.set('myProperty', 'value');
-      // Handle any actions with this.set('myAction', function(val) { ... });
+    (0, _qunit.test)('it renders a post title', async function (assert) {
       await (0, _testHelpers.render)(Ember.HTMLBars.template(
       /*
         <Entry />
       */
       {"id":"nIKRkHqF","block":"{\"symbols\":[],\"statements\":[[8,\"entry\",[],[[],[]],null]],\"hasEval\":false,\"upvars\":[]}","meta":{}}));
-      assert.equal(this.element.textContent.trim(), ''); // Template block usage:
+      assert.dom('.post').exists();
+      assert.dom('.post').hasText('Title:');
+    });
+  });
+});
+define("izea-interview/tests/integration/components/modal-test", ["qunit", "ember-qunit", "@ember/test-helpers"], function (_qunit, _emberQunit, _testHelpers) {
+  "use strict";
 
+  (0, _qunit.module)('Integration | Component | modal', function (hooks) {
+    (0, _emberQunit.setupRenderingTest)(hooks);
+    (0, _qunit.test)('it renders a modal the displays all post info with collapsible button for author info', async function (assert) {
       await (0, _testHelpers.render)(Ember.HTMLBars.template(
       /*
-        
-            <Entry>
-              template block text
-            </Entry>
-          
+        <Modal />
       */
-      {"id":"N0ll6a/E","block":"{\"symbols\":[],\"statements\":[[2,\"\\n      \"],[8,\"entry\",[],[[],[]],[[\"default\"],[{\"statements\":[[2,\"\\n        template block text\\n      \"]],\"parameters\":[]}]]],[2,\"\\n    \"]],\"hasEval\":false,\"upvars\":[]}","meta":{}}));
-      assert.equal(this.element.textContent.trim(), 'template block text');
+      {"id":"S10OUhSG","block":"{\"symbols\":[],\"statements\":[[8,\"modal\",[],[[],[]],null]],\"hasEval\":false,\"upvars\":[]}","meta":{}}));
+      assert.dom('.button').hasText('Learn More');
+      await (0, _testHelpers.click)('.button');
+      assert.dom('.modal').exists();
+      assert.dom('.authBtn').hasText('About the author');
+      await (0, _testHelpers.click)('.authBtn');
+      assert.dom('.authBtn').hasText('Hide');
+      await (0, _testHelpers.click)('.authBtn');
+      assert.dom('.authBtn').hasText('About the author');
     });
   });
 });
@@ -55,30 +80,6 @@ define("izea-interview/tests/unit/adapters/user-test", ["qunit", "ember-qunit"],
     (0, _qunit.test)('it exists', function (assert) {
       let adapter = this.owner.lookup('adapter:user');
       assert.ok(adapter);
-    });
-  });
-});
-define("izea-interview/tests/unit/controllers/pagination-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
-  "use strict";
-
-  (0, _qunit.module)('Unit | Controller | pagination', function (hooks) {
-    (0, _emberQunit.setupTest)(hooks); // TODO: Replace this with your real tests.
-
-    (0, _qunit.test)('it exists', function (assert) {
-      let controller = this.owner.lookup('controller:pagination');
-      assert.ok(controller);
-    });
-  });
-});
-define("izea-interview/tests/unit/controllers/post-test", ["qunit", "ember-qunit"], function (_qunit, _emberQunit) {
-  "use strict";
-
-  (0, _qunit.module)('Unit | Controller | post', function (hooks) {
-    (0, _emberQunit.setupTest)(hooks); // TODO: Replace this with your real tests.
-
-    (0, _qunit.test)('it exists', function (assert) {
-      let controller = this.owner.lookup('controller:post');
-      assert.ok(controller);
     });
   });
 });

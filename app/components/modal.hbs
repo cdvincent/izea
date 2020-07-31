@@ -9,7 +9,7 @@
                     <hr>
                     <p>Body: {{@post.body}}</p>
                     <p>Author: {{@post.userId.name}}</p>
-                    <button type="button" class="button {{if this.show "show"}}" {{on "click" this.toggle}}>
+                    <button type="button" class="button authBtn {{if this.show "show"}}" {{on "click" this.toggle}}>
     
                         {{#if this.show}}
                             <small>Hide</small>
